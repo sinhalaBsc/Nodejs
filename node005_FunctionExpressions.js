@@ -1,18 +1,18 @@
- // nomal fucntion statment
-
+// nomal fucntion statment ********************************************
  function sayHi(){
    console.log('hi');
  }
  sayHi();
 
- // function  expression
+
+// function  expression ***********************************************
  var sayBye= function(){   // the thing is this function store in varialbe
    console.log('bye');     // we can pass this fuction as argument
  }
  sayBye();
 
- // callback function
 
+// callback function **************************************************
  function callFunction(fun){
    fun();
  };
