@@ -9,7 +9,7 @@ Buffers
 - Transfer small chunks of data at a time.
 
 Streams in Node.js
-- can create streams in Node.js to transfer data.
+- can create streams in Node.js to transfer data buffers.
 - Increase performance.
 
 */
