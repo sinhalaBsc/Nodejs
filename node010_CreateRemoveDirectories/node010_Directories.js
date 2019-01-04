@@ -23,7 +23,7 @@ fs.mkdir('stuff',function(){
 });
 
 // delete directory
-// we can't delete the directory without it empty.frist you have to delete all file in directory
+// we can't delete the directory until it's empty.frist you have to delete all files in that directory.
 
 fs.unlink('./stuff/node010_writeMe.txt', function(){ // delete file inside folder
   fs.rmdir('stuff');                                 // 
