@@ -3,7 +3,7 @@
 var fs = require('fs');
 
 // delete the file (only file)
-//>fs.unlink('file name reletive to this current file');
+//>fs.unlink('file name reletive to this current runing file');
 
 // create Directories synchronously
 //>fs.mkdirSync('stuff');
