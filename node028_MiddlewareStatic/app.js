@@ -44,7 +44,16 @@ var app=express();
 app.set('view engine','ejs'); // just one time
 
 app.use('/assets',express.static('assets'));
+// you have to link css to html.ejs file follwing way.
+// when html.ejs file calling to css file throught this ' href="/assets/styles.css"' link then
+// app.use('/assets',express.static('assets')); function will fire.and connect with all files with 'express.static('assets')' folder.
+/*
+<head>
+  <meta charset="UTF-8">
+  <link href="/assets/styles.css" rel='stylesheet' type='text/css' />
+</head>
 
+*/
 
 app.get('/',function(req,res){
   res.render('index');
