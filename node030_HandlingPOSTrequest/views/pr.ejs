@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+    <!--
+     <style>
+        body{background: skyblue;font-family: verdana;color: #fff;padding: 30px;}
+        h1{font-size: 48px;text-transform: uppercase;letter-spacing: 2px;text-align: center;}
+        p{font-size: 16px;text-align: center;}
+     </style>
+    -->
+     <link href="/assets/styles.css" rel='stylesheet' type='text/css' />
+  </head>
+
+   <body>
+       <% include partial/nav.ejs %>  <!-- include the html file -->
+      <h1> welcome to the profile <%= person %> </h1>
+      <p> <strong> Age : </strong><%= data.age %> </p>
+      <p> <strong> Job : </strong><%= data.job %> </p>
+
+      <ul>
+          <% data.subjects.forEach(function(sub){  %>
+              <li> <%= sub %> </li>
+
+          <% }); %>
+
+      </ul>
+
+   </body>
+
+</html>
