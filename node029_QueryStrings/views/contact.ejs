@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+     <style>
+        body{background: skyblue;font-family: verdana;color: #fff;padding: 30px;}
+        h1{font-size: 48px;text-transform: uppercase;letter-spacing: 2px;text-align: center;}
+        p{font-size: 16px;text-align: center;}
+     </style>
+
+   </head>
+
+   <body>
+       <% include partial/nav.ejs %>  <!-- include the html file -->
+      <h1> CONTACT  </h1>
+      <p> connect me with this number </p>
+      <p> page number <%= q.page %> </p>
+
+
+      <form id='contact-form'> <!--url is making using input 'name="page"' -->
+        <label for='page'>who you want to contact </label>
+        <input type="text" name="page" value="<%= q.page %>">
+        <label for='department'> which department </label>
+        <input type="text" name="department" value="enter your department">
+        <label for='email'> your email </label>
+        <input type="text" name="email" value="your email">
+        <input type="submit"  value="submit">
+      </form>
+
+
+
+   </body>
+
+</html>
