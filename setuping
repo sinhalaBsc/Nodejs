@@ -1,0 +1,48 @@
+create ssh key in linux
+[Create a SSH Key and use it with Digital Ocean>> https://www.youtube.com/watch?v=HPW9naCbToE ]
+
+to display root directory 
+$ ls -la
+
+to create ssh key on current directory
+$ ssh-keygen -t rsa -C samadhivkcom@gmail.com
+
+to see what is on create 'redisnode001.pub' file
+$ nano redisnode001.pub
+you can open this file using texteditor and copy this key 
+
+to connect 
+$ ssh root@68.183.77.118 -i redisnode001
+
+
+install nodejs on digitalocean server
+
+to update ubuntu server
+$ sudo apt-get update
+
+to install nodejs server
+$ sudo apt-get install nodejs
+$ nodejs -v
+
+to install npm
+$ sudo apt-get install npm
+$ npm -v
+
+
+you need install only one from following cmd
+to install only express 
+$ sudo npm install -g express
+to install  express with generator for control system 
+$ sudo npm install -g express express-generator
+
+to install npm in project directory
+$ npm install
+
+to fix error  "/usr/bin/env: ‘node’: No such file or directory" on Ubuntu
+ln -s /usr/bin/nodejs /usr/bin/node
+
+
+to use filezilla with sshkey 
+[Create a SSH Key and use it with Digital Ocean>>https://www.youtube.com/watch?v=O5-f_Sn-7rE]
+
+
