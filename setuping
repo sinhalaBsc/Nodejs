@@ -38,6 +38,22 @@ $ sudo npm install -g express express-generator
 to install npm in project directory
 $ npm install
 
+set listen port number as 80 to make listen default port of relative domain .
+This mean you don't need add additional port number end of domain name.
+(change on app.js file)
+app.listen(80);
+
+set automatically startup the app.js file
+this will very useful when server get reboot for some reson.
+first you need to install "pm2" as globally
+$ sudo npm install -g pm2 
+secondly set 'app.js' file running continuously. 
+with running using 'node app.js' this command can't run 'app.js' file  continuously. 
+it will stop when close terminal.that's why we should use following commad to run  'app.js' file continuously.
+$ sudo pm2 start app.js 
+lastly set run 'pm2' when  startup the system. then 'pm2' will start running his settled background programs. 
+$ sudo pm2 startup systemd
+
 to fix error  "/usr/bin/env: ‘node’: No such file or directory" on Ubuntu
 ln -s /usr/bin/nodejs /usr/bin/node
 
