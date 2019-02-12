@@ -11,7 +11,7 @@ to see what is on create 'redisnode001.pub' file
 $ nano redisnode001.pub
 you can open this file using texteditor and copy this key 
 
-to connect 
+to connect using terminal
 $ ssh root@68.183.77.118 -i redisnode001
 
 
