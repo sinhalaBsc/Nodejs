@@ -50,8 +50,12 @@ $ sudo npm install -g pm2
 secondly set 'app.js' file running continuously. 
 with running using 'node app.js' this command can't run 'app.js' file  continuously. 
 it will stop when close terminal.that's why we should use following commad to run  'app.js' file continuously.
-$ sudo pm2 start app.js 
+$ sudo pm2 start app.js
+if our nodejs app.js file located different
+$ sudo pm2 start /root/test/app.js
+
 lastly set run 'pm2' when  startup the system. then 'pm2' will start running his settled background programs. 
+this want to do only one time
 $ sudo pm2 startup systemd
 
 to fix error  "/usr/bin/env: ‘node’: No such file or directory" on Ubuntu
