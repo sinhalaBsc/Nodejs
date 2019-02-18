@@ -119,6 +119,7 @@ server {
 to restart nginx server 
 $ sudo service nginx restart
 
+
 to fix error  "/usr/bin/env: ‘node’: No such file or directory" on Ubuntu
 ln -s /usr/bin/nodejs /usr/bin/node
 
