@@ -1,6 +1,9 @@
 create ssh key in linux
 [Create a SSH Key and use it with Digital Ocean>> https://www.youtube.com/watch?v=HPW9naCbToE ]
 
+to see ubuntu version
+$ lsb_release -a
+
 to display root directory 
 $ ls -la
 
