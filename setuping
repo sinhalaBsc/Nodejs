@@ -83,6 +83,12 @@ to stop the specific app from pm2 list
 $ pm2 stop 0
 0 - id number can get from app list table (see above)
 
+to uninstall pm2 using sudo:
+$ pm2 kill
+$ sudo npm remove pm2 -g
+#test with :
+$ which pm2
+
 
 ************* Nginx server ****************************
 
