@@ -89,6 +89,8 @@ $ sudo npm remove pm2 -g
 #test with :
 $ which pm2
 
+# pm2 more info 
+[ link >> http://pm2.keymetrics.io/docs/usage/quick-start/ ]
 
 ************* Nginx server ****************************
 
