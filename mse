@@ -6,9 +6,36 @@ to convert video to init+segments
 conversation about media source extension
 [link>> https://github.com/kevinGodell/mp4frag/issues/1]
 
-ffmpag
-පහත විධාන ක්‍රියාත්මක කිරීම සඳහා ffmpeg version 4.1.3 වැඩ වැඩි වෙළුමක් අවශ්‍ය වේ 
-[link>> https://www.youtube.com/watch?v=MPV7JXTWPWI&t=655s]
+#ffmpag
+  පහත විධාන ක්‍රියාත්මක කිරීම සඳහා ffmpeg version 4.1.3 වැඩ වැඩි වෙළුමක් අවශ්‍ය වේ 
+  [link>> https://www.youtube.com/watch?v=MPV7JXTWPWI&t=655s]
+  [link >> https://developer.mozilla.org/en-US/docs/Web/API/Media_Source_Extensions_API/Transcoding_assets_for_MSE]
+  
+  >to convert to mp4
+  $ ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4
+  
+  >to convert all MKV files in the current directory, run a simple loop in terminal:
+  for i in *.mkv; do
+    ffmpeg -i "$i" -codec copy "${i%.*}.mp4"
+  done
+  
+  >to make segments
+  $ ffmpeg -i h264_5s.mp4 -f hls -hls_segment_type fmp4 -hls_time 10 -report segment.m3u8
+
+  >to check fragments
+  http://nickdesaulniers.github.io/mp4info/
+  
+  >fragmenting if not mp4
+  $ ffmpeg -i trailer_1080p.mov -c:v copy -c:a copy -movflags frag_keyframe+empty_moov bunny_fragmented.mp4
+  >fragmenting if mp4
+  $ ffmpeg -i non_fragmented.mp4 -movflags frag_keyframe+empty_moov fragmented.mp4
+  >fragmenting for google crome browser
+  -movflags frag_keyframe+empty_moov+default_base_moof
+
+
+
+
+
 
 html5 player
 part 1
