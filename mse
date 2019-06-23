@@ -19,7 +19,7 @@ conversation about media source extension
     ffmpeg -i "$i" -codec copy "${i%.*}.mp4"
   done
   
-  >to make segments
+  >to make segments [link>> https://trac.ffmpeg.org/ticket/7166]
   $ ffmpeg -i h264_5s.mp4 -f hls -hls_segment_type fmp4 -hls_time 10 -report segment.m3u8
 
   >to check fragments
