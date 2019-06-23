@@ -37,6 +37,12 @@ conversation about media source extension
 
   https://developer.mozilla.org/en-US/docs/Web/API/SourceBuffer
 
+#Exceeding the buffering quota ERROR 
+  https://developers.google.com/web/updates/2017/10/quotaexceedederror
+
+
+# Examples 
+  https://kevingodell.github.io/streams/index.html
 
 
 html5 player
