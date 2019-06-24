@@ -44,6 +44,12 @@ conversation about media source extension
 # Examples 
   https://kevingodell.github.io/streams/index.html
 
+# html5 player evnet summery
+  https://html.spec.whatwg.org/multipage/media.html#event-media-seeking (need vpn)
+  https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
+  
+# Calculate time 
+  https://stackoverflow.com/questions/36112002/calculate-m4s-segment-file-suffix-in-html5-video-streaming-when-user-seeks-to-a
 
 html5 player
 part 1
