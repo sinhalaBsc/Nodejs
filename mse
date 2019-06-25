@@ -51,6 +51,9 @@ conversation about media source extension
 # Calculate time 
   https://stackoverflow.com/questions/36112002/calculate-m4s-segment-file-suffix-in-html5-video-streaming-when-user-seeks-to-a
 
+# Good place to learn mse
+  http://dash-mse-test.appspot.com/  (go to demo player)
+
 html5 player
 part 1
 [link >> https://www.youtube.com/watch?v=Sq4NFODUjGg]
