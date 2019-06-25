@@ -53,6 +53,9 @@ conversation about media source extension
 
 # Good place to learn mse
   http://dash-mse-test.appspot.com/  (go to demo player)
+  
+# Media Source Seeking
+  https://googlechrome.github.io/samples/media/live-seekable-range.html
 
 html5 player
 part 1
