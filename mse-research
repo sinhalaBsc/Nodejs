@@ -1,0 +1,10 @@
+video seek bar එක ක්ලික් කල සැනින් පිලිවෙලින් 
+1. emit seek event.  
+// වෙලාවට අදාළ video content එක source Buffer එකේ  තිබීම හෝ නොතිබීම මත
+2. emit seeked event OR emit wating event.       
+
+නමුත් video seek bar එක video එක ධාවනය වීමේදී ක්ලික් කල විට.
+1. emit seek event 
+2. emit wating event (කීප වරක් emit විය හැකිය)
+3. emit seeked event 
+මේ නිසා seek event  එක emit සැනින් video එක pause කිරීම සුදුසුය. 
