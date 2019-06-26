@@ -8,3 +8,8 @@ video seek bar එක ක්ලික් කල සැනින් පිලි�
 2. emit wating event (කීප වරක් emit විය හැකිය)
 3. emit seeked event 
 මේ නිසා seek event  එක emit සැනින් video එක pause කිරීම සුදුසුය. 
+
+
+video segment බාගත කිරීමේදී updateend event එක යොදා ගැනීම segment නිවැරදිව fetch වීම සඳහා වැදගත්ය.
+sourceBuffer.addEventListener("updateend",loadSegment);
+
