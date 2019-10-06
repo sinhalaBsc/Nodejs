@@ -138,4 +138,23 @@ ln -s /usr/bin/nodejs /usr/bin/node
 to use filezilla with sshkey 
 [Create a SSH Key and use it with Digital Ocean>>https://www.youtube.com/watch?v=O5-f_Sn-7rE]
 
+----------------------------------------------------------------------------------------------------------------
+How to edit Nginx setting for big file upload
+
+If the file is too large you may be running into nginx’s clientmaxbody_size which if exceed should 
+return a 413 error, though some browsers don’t support actually reporting that error correctly.
+You would want to increase this to a larger limit or set it to 0 in which case there will be no limits.
+go > $ sudo nano /etc/nginx/nginx.conf
+change >
+http {
+    # [...]
+    client_max_body_size 100m;
+    # [...]
+}
+
+If that doesn’t fix it you will want to tail your error logs for both nginx and meteor to see if you 
+are getting something more specific and then provide that in your question as there maybe other factors at play.
+[link >> https://www.digitalocean.com/community/questions/how-to-edit-nginx-setting-for-big-file-upload]
+
+----------------------------------------------------------------------------------------------------------------
 
