@@ -1,6 +1,14 @@
 create ssh key in linux
 [Create a SSH Key and use it with Digital Ocean>> https://www.youtube.com/watch?v=HPW9naCbToE ]
 
+to keep SSH session alive
+> go to  /etc/ssh/sshd_config file  and add
+ClientAliveInterval 30
+TCPKeepAlive yes
+ClientAliveCountMax 99999
+>after to restart your SSH service using the command
+$service sshd restart
+
 to see file size in ubuntu
 $ du -sh directory ENTER
 
